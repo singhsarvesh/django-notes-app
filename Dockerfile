@@ -15,8 +15,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . /app/backend
 
-EXPOSE 8000
+EXPOSE 8001
 #RUN python manage.py migrate
 #RUN python manage.py makemigrations
 # Define the default command to run the application
-CMD ["sh", "-c", "exec python manage.py runserver 0.0.0.0:8000"]
+CMD ["sh", "-c", "exec python manage.py runserver 0.0.0.0:8001"]
