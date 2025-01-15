@@ -19,4 +19,4 @@ EXPOSE 8001
 #RUN python manage.py migrate
 #RUN python manage.py makemigrations
 # Define the default command to run the application
-CMD ["sh", "-c", "exec python manage.py runserver 0.0.0.0:8001"]
+#CMD ["sh", "-c", "exec python manage.py runserver 0.0.0.0:8001"]
